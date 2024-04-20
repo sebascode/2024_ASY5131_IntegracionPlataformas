@@ -10,3 +10,11 @@ En Visual Studio (VS) crear un API para Clientes que contenga las siguientes car
 - POST con un `JSON` de un `Cliente` para insertar.
 - PUT con `ID` y `JSON` para actualizar un `Cliente`.
 - DELETE con `ID` para eliminar un `Cliente`
+
+## Parte 2
+Se debe agregar:
+- Un nuevo controlador para `Producto`
+- Debe poseer las características antes mencionada para un `CRUD`.
+
+## Parte 3
+To be continue...
