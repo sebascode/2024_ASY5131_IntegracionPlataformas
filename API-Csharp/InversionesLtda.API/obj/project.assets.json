@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cetecom\\source\\repos\\InversionesLtda\\InversionesLtda.API\\InversionesLtda.API.csproj",
+      "projectUniqueName": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
       "projectName": "InversionesLtda.API",
-      "projectPath": "C:\\Users\\Cetecom\\source\\repos\\InversionesLtda\\InversionesLtda.API\\InversionesLtda.API.csproj",
+      "projectPath": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
       "packagesPath": "C:\\Users\\Cetecom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cetecom\\source\\repos\\InversionesLtda\\InversionesLtda.API\\obj\\",
+      "outputPath": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cetecom\\AppData\\Roaming\\NuGet\\NuGet.Config",

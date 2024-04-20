@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "39al2ZXcLYqYiWGPxYIWBiMvsXaCU1896Nkqt0jfpYwrHwp8TqSWf9D8EBvkjs2oe64IlqhqT6aEfJyJkmMOwg==",
+  "dgSpecHash": "i+VagVg1YB1K6/PWLeoCa+REVjNVRrcGPMwFwQOcijUiHgY1ePoIzbs9GILwh85r+3pdGDYOEPXceEEP4muoTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cetecom\\source\\repos\\InversionesLtda\\InversionesLtda.API\\InversionesLtda.API.csproj",
+  "projectFilePath": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
