@@ -17,4 +17,9 @@ Se debe agregar:
 - Debe poseer las características antes mencionada para un `CRUD`.
 
 ## Parte 3
-To be continue...
+Crear una API nueva en Python usando FLASK
+Esta debe:
+- Consultar y listar sus `Productos` del API C#
+- Consultar y Listar sus `Clientes` del API C#
+- Realizar una `Factura` de compra por al menos un producto.
+- Calcular el total de la factura según los productos agregados.
