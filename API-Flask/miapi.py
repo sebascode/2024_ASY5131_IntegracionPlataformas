@@ -1,27 +1,52 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
 ## APP de Prueba para API Cliente
 
+listaCliente = []
+
 @app.get("/cliente")
 def getClientes():
-    return "<h1>hola cliente</h1>"
+    return listaCliente
 
 ### GET "localhost:5000/cliente/5"
 
 @app.get("/cliente/<id>")
 def getCliente(id):
-    return "<h1>Hola cliente, has seleccionado "+ id +"</h1>"
+    return listaCliente.index(id)
 
 @app.post("/cliente")
 def insertaCliente():
-    return 0
+    json = request.get_json()
+    
+    cliente = {
+        "id": json["id"],
+        "razonSocial": json["nombre"],
+        "rut": json["rut"],
+        "direccion": json["direccion"] 
+    }
+    print(cliente)
 
-@app.put("/cliente")
-def actualizaCliente():
-    return 0
+    listaCliente.append(cliente)
+    return ""
+
+@app.put("/cliente/<id>")
+def actualizaCliente(id):
+    json = request.get_json()
+    
+    cliente = {
+        "id": json["id"],
+        "razonSocial": json["nombre"],
+        "rut": json["rut"],
+        "direccion": json["direccion"] 
+    }
+    listaCliente.pop(id)
+    listaCliente.append(cliente)
+
+    return ""
 
 @app.delete("/cliente")
 def borrarCliente():
-    return 0
+    listaCliente.pop(id)
+    return ""
