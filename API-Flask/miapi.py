@@ -2,51 +2,33 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-## APP de Prueba para API Cliente
+# CRUD de Cliente guardado en una lista estática
 
-listaCliente = []
+lista = []
 
 @app.get("/cliente")
 def getClientes():
-    return listaCliente
-
-### GET "localhost:5000/cliente/5"
+    return lista
 
 @app.get("/cliente/<id>")
 def getCliente(id):
-    return listaCliente.index(id)
+    return lista.index(id)
 
 @app.post("/cliente")
-def insertaCliente():
+def postCliente():
     json = request.get_json()
-    
-    cliente = {
-        "id": json["id"],
-        "razonSocial": json["nombre"],
-        "rut": json["rut"],
-        "direccion": json["direccion"] 
-    }
-    print(cliente)
-
-    listaCliente.append(cliente)
+    lista.append(json)
     return ""
 
 @app.put("/cliente/<id>")
-def actualizaCliente(id):
+def putCliente(id):
     json = request.get_json()
-    
-    cliente = {
-        "id": json["id"],
-        "razonSocial": json["nombre"],
-        "rut": json["rut"],
-        "direccion": json["direccion"] 
-    }
-    listaCliente.pop(id)
-    listaCliente.append(cliente)
-
+    print(type(id))
+    lista.pop(id)
+    lista.append(json)
     return ""
 
-@app.delete("/cliente")
-def borrarCliente():
-    listaCliente.pop(id)
+@app.delete("/cliente/<id>")
+def deleteCliente(id:int):
+    lista.pop(id)
     return ""
