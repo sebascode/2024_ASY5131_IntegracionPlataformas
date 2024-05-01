@@ -12,7 +12,7 @@ def getClientes():
 
 @app.get("/cliente/<id>")
 def getCliente(id):
-    return lista.index(id)
+    return lista[int(id)]
 
 @app.post("/cliente")
 def postCliente():
@@ -23,12 +23,11 @@ def postCliente():
 @app.put("/cliente/<id>")
 def putCliente(id):
     json = request.get_json()
-    print(type(id))
-    lista.pop(id)
+    lista.pop(int(id))
     lista.append(json)
     return ""
 
 @app.delete("/cliente/<id>")
 def deleteCliente(id:int):
-    lista.pop(id)
+    lista.pop(int(id))
     return ""
