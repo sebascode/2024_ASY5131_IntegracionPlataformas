@@ -1,3 +1,6 @@
 is_global = true
 build_property.RootNamespace = InversionesLtda.API
-build_property.ProjectDir = C:\Users\Cetecom\2024_ASY5131_IntegracionPlataformas\API-Csharp\InversionesLtda.API\
+build_property.ProjectDir = /Users/scode/Source/2024_ASY5131_IntegracionPlataformas/API-Csharp/InversionesLtda.API/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 

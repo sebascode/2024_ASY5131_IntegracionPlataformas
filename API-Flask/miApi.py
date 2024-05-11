@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -12,22 +12,16 @@ def getClientes():
 
 @app.get("/cliente/<id>")
 def getCliente(id):
-    return lista[int(id)]
+    return id
 
 @app.post("/cliente")
 def postCliente():
-    json = request.get_json()
-    lista.append(json)
-    return ""
+    return 0
 
 @app.put("/cliente/<id>")
 def putCliente(id):
-    json = request.get_json()
-    lista.pop(int(id))
-    lista.append(json)
-    return ""
+    return 0
 
 @app.delete("/cliente/<id>")
-def deleteCliente(id:int):
-    lista.pop(int(id))
-    return ""
+def deleteCliente(id):
+    return 0
