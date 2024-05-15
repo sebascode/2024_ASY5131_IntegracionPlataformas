@@ -23,3 +23,15 @@ Esta debe:
 - Consultar y Listar sus `Clientes` del API C#
 - Realizar una `Factura` de compra por al menos un producto.
 - Calcular el total de la factura según los productos agregados.
+
+
+----
+
+# Actividad: Segunda Unidad
+
+1. Crear un API de Ventas que nos permita:
+- Recepcionar una solicitud de venta indicando producto, cantidad, cliente y que nos calcule el total.
+- Almacenar solicitudes con fecha y hora
+- Consultar ventas con fecha
+2. Consumir APIs de Producto y Clientes anteriormente hechas en C#.
+3. Profit
