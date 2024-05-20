@@ -39,4 +39,7 @@ graph LR
     A[Cliente Web] -->|"[POST] '/api/boleta'"|B[API Flask]
     B -->|"[GET] '/api/cliente/:id'"| C[API de Clientes]
     B -->|"[GET] '/api/producto/:id'"| D[API de Productos]
+    C -->|"[json] {cliente}"| B
+    D -->|"[json] {producto}"| B
+    B -->|"[json] {boleta}"| A
 ```
