@@ -35,3 +35,13 @@ Esta debe:
 - Consultar ventas con fecha
 2. Consumir APIs de Producto y Clientes anteriormente hechas en C#.
 3. Profit
+
+```mermaid
+graph LR
+    A[Cliente Web] -->|"[POST] '/api/boleta'"|B[API Flask]
+    B -->|"[GET] '/api/cliente/:id'"| C[API de Clientes]
+    B -->|"[GET] '/api/producto/:id'"| D[API de Productos]
+    C -->|"[json] {cliente}"| B
+    D -->|"[json] {producto}"| B
+    B -->|"[json] {boleta}"| A
+```
