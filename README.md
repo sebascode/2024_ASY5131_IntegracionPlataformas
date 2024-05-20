@@ -33,3 +33,10 @@ Crear un API de Ventas que nos permita:
 - Consultar ventas con fecha
 - Consumir APIs de Producto y Clientes anteriormente hechas en C#.
 - Profit
+
+´´´mermaid
+graph TD
+    A[Cliente Web] --> B[API Flask]
+    B --> C[API de Clientes]
+    B --> D[API de Productos]
+´´´
