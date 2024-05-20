@@ -35,7 +35,8 @@ Crear un API de Ventas que nos permita:
 - Profit
 
 ```mermaid
-graph TD
-    A[Cliente Web] --> B[API Flask]
-    B --> C[API de Clientes]
-    B --> D[API de Productos]
+graph LR
+    A[Cliente Web] -->|[POST] "/api/boleta"|B[API Flask]
+    B -->|[GET] "/api/cliente/:id"| C[API de Clientes]
+    B -->|[GET] "/api/producto/:id"| D[API de Productos]
+```
