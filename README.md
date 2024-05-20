@@ -34,9 +34,8 @@ Crear un API de Ventas que nos permita:
 - Consumir APIs de Producto y Clientes anteriormente hechas en C#.
 - Profit
 
-:::mermaid
+```mermaid
 graph TD
     A[Cliente Web] --> B[API Flask]
     B --> C[API de Clientes]
     B --> D[API de Productos]
-:::
