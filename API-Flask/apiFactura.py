@@ -44,6 +44,6 @@ class Factura(Resource):
 
         return objRespuesta
     
-api.add_resource(Factura, "/api/boleta",  {"origins": "*"})
+api.add_resource(Factura, "/api/boleta")
 
 app.run(debug=True, port=5001)

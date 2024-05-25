@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj": {}
+    "D:\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj": {
+    "D:\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
+        "projectUniqueName": "D:\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
         "projectName": "InversionesLtda.API",
-        "projectPath": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
+        "projectPath": "D:\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
         "packagesPath": "C:\\Users\\Cetecom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\obj\\",
+        "outputPath": "D:\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cetecom\\AppData\\Roaming\\NuGet\\NuGet.Config",
