@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Front para API</title>
+</head>
+<body>
+    
+    <h1>Bienvenido al himalaya</h1>
+
+    <form>
+        
+        <label for="cboCliente">Cliente:</label>
+        <select name="cboCliente" id="cboCliente"></select>
+        <br>
+        <label for="cboProducto">Producto:</label>
+        <select name="cboProducto" id="cboProducto">
+            <option value="1">Zanahoria</option>
+            <option value="1">Cebolla</option>
+            <option value="1">Calabaza</option>
+        </select>
+        <br>
+        <label for="txtCantidad">Cantidad:</label>
+        <input type="text" name="txtCantidad" id="txtCantidad">
+        <br>
+        <button id="btnEnviar" class="btn btn-primary">Enviar</button>
+    </form>
+    <script type="text/javascript">
+        /*
+        {
+            "id_cliente": 5,
+            "producto_id": 3,
+            "cantidad": 8,
+            "id": 1
+        }
+        */
+        // fetch == curl
+        const cboCliente = document.getElementById('cboCliente');
+        const listaClientes = fetch("http://localhost:5000/api/cliente", {
+            headers: {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+            },
+            mode: 'cors'
+        });
+        listaClientes.then(function(e){
+            console.log({e});
+            e.json().then(function(objeto){
+                console.log(objeto);
+            });
+        }).catch(function(error){
+            alert(error.message);
+        }).finally(function(e){
+            console.log({e});
+        });
+    </script>
+</body>
+</html>
+
