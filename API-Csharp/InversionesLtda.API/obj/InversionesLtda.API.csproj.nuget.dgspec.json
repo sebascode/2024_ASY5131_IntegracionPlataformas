@@ -1,27 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj": {}
+    "/Users/scode/Source/2024_ASY5131_IntegracionPlataformas/API-Csharp/InversionesLtda.API/InversionesLtda.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj": {
+    "/Users/scode/Source/2024_ASY5131_IntegracionPlataformas/API-Csharp/InversionesLtda.API/InversionesLtda.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
+        "projectUniqueName": "/Users/scode/Source/2024_ASY5131_IntegracionPlataformas/API-Csharp/InversionesLtda.API/InversionesLtda.API.csproj",
         "projectName": "InversionesLtda.API",
-        "projectPath": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
-        "packagesPath": "C:\\Users\\Cetecom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cetecom\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\obj\\",
+        "projectPath": "/Users/scode/Source/2024_ASY5131_IntegracionPlataformas/API-Csharp/InversionesLtda.API/InversionesLtda.API.csproj",
+        "packagesPath": "/Users/scode/.nuget/packages/",
+        "outputPath": "/Users/scode/Source/2024_ASY5131_IntegracionPlataformas/API-Csharp/InversionesLtda.API/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/scode/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Cetecom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/scode/.nuget/NuGet/NuGet.Config",
+          "/Users/scode/.nuget/NuGet/config/Godot.Offline.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +36,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -45,10 +52,25 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.32, 3.1.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -57,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-preview.3.24204.13/RuntimeIdentifierGraph.json"
         }
       }
     }
