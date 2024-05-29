@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+</head>
+<body>
+    <form>
+        <label>Cliente</label>
+        <select name="cboCliente" id="cboCliente"></select>
+        <br><br>
+        <label>Producto</label>
+        <select name="cboProducto" id="cboProducto">
+            <option value="1">Zanahoria</option>
+            <option value="1">Melon</option>
+            <option value="1">Sandia</option>
+            <option value="1">Arroz</option>
+        </select>
+        <br><br>
+        <label>Cantidad</label>
+        <input type="number" name="txtCantidad" id="txtCantidad">
+        <br><br>
+        <button class="btn" id="btnEnviar">Enviar</button>
+    </form>
+
+    <script type="text/javascript">
+        /*
+        function nombre(param1, param2){
+            console.log({param1, param2});
+        }
+
+        // arrow function
+        const nombre = (param1, param2) => {
+            console.log({param1, param2});
+        }
+
+        // ambos se consumen de igual forma
+        nombre("hola", "chao");
+        */
+       //console.log({resultado});
+       fetch("http://localhost:5000/api/cliente")
+       .then( () => {
+            alert("Funcionó!");
+       } ).catch( () => {
+            alert("Se cayó!");
+       }).finally( () => {
+            alert("Finalizó");
+       });
+       
+    </script>
+</body>
+</html>

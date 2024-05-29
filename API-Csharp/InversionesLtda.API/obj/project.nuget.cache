@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nvPz3n1BHoM=",
+  "dgSpecHash": "wSJJX+K6IG7oi60uSNty5WIqTfjaYfqzUHIQe8bKulIjos1n1VJOgWZ/cb6KGw65lCoM5oqVhhAK/o5Jx8r9ag==",
   "success": true,
-  "projectFilePath": "/Users/scode/Source/2024_ASY5131_IntegracionPlataformas/API-Csharp/InversionesLtda.API/InversionesLtda.API.csproj",
-  "expectedPackageFiles": [
-    "/Users/scode/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "/Users/scode/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "/Users/scode/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.32/microsoft.netcore.app.host.osx-x64.3.1.32.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\2024_ASY5131_IntegracionPlataformas\\API-Csharp\\InversionesLtda.API\\InversionesLtda.API.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

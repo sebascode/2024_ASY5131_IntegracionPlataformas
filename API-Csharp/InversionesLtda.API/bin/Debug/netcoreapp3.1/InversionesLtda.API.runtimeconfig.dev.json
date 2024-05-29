@@ -1,9 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/scode/.dotnet/store/|arch|/|tfm|",
-      "/Users/scode/.nuget/packages",
-      "/Users/scode/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+      "C:\\Users\\Cetecom\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Cetecom\\.nuget\\packages"
     ]
   }
 }
