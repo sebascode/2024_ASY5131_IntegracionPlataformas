@@ -36,9 +36,9 @@
             },
             mode: 'cors'
         });
-        listaClientes.then(async function(e){
+        listaClientes.then(async (e) => {
             await e.json().then(async function(objeto){
-                //console.log(objeto);
+                console.log(objeto);
                 let itemsStr = "";
                 objeto.forEach(element => {
                     console.log({element});
