@@ -1,0 +1,53 @@
+name: Compilar Csharp
+
+on:
+  push:
+    branches:
+      - seccion/002v
+  pull_request:
+    branches:
+      - seccion/002v
+
+jobs:
+  BuildApp:
+    permissions:
+      contents: write
+    runs-on: ubuntu-20.04
+    environment: Release
+    steps:
+
+      # Hacemos un checkout del sistema
+      - name: 'Checkout Github Action' 
+        uses: actions/checkout@seccion/002v
+
+      # Instalamos dotnet
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '3.1.x'
+
+      # Hacemos el publish del dotnet 
+      - name: Dotnet Publish
+        run: |
+          ls -la
+          cd API-Csharp/InversionesLtda.API/.
+          dotnet publish -c Release 
+
+      # Creamos ZIP
+      - name: Generar Zip
+        run: |
+          zip -r MiApp.zip API-Csharp/Target/
+
+      # Login Azure desde un secret
+      # Se obtiene el valor del secret ejecutando el comando:
+      # az ad sp create-for-rbac --name "{sp-name}" --sdk-auth --role contributor \
+      #   --scopes /subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Web/sites/{app-name}
+      - name: 'Login via Azure CLI'
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+
+      # Publicamos
+      - uses: azure/webapps-deploy@v2
+        with:
+          app-name: apptest
