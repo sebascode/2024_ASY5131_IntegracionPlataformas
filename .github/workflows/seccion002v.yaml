@@ -30,12 +30,12 @@ jobs:
         run: |
           ls -la
           cd API-Csharp/InversionesLtda.API/.
-          dotnet publish -c Release 
+          dotnet publish -c Release --artifacts-path ../publish
 
       # Creamos ZIP
       - name: Generar Zip
         run: |
-          zip -r MiApp.zip API-Csharp/Target/
+          zip -r MiApp.zip API-Csharp/publish/.
 
       # Login Azure desde un secret
       # Se obtiene el valor del secret ejecutando el comando:
