@@ -20,8 +20,8 @@ jobs:
       # hacer el publish
       - uses: EasyDesk/action-dotnet-publish@v1
         with:
-          path: './API-CSharp/InversionesLtda.API/'
-          output-dir: './API-CSharp/Target/'
+          path: 'API-CSharp/InversionesLtda.API/'
+          output-dir: 'API-CSharp/Target/'
           build-configuration: Release
 
       # ZIP
