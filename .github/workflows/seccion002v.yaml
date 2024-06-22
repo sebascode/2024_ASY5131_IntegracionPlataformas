@@ -18,7 +18,9 @@ jobs:
 
       # Hacemos un checkout del sistema
       - name: 'Checkout Github Action' 
-        uses: actions/checkout@seccion/002v
+        uses: actions/checkout@main
+        with:
+          ref: seccion/002v
 
       # Instalamos dotnet
       - uses: actions/setup-dotnet@v4
