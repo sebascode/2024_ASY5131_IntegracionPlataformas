@@ -1,0 +1,35 @@
+name: Compilar Csharp
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  BuildApp:
+    permissions:
+      contents: write
+    runs-on: ubuntu-20.04
+    steps:
+      - name: 'Checkout Github Action' 
+        uses: actions/checkout@master
+
+      # hacer el publish
+      - uses: EasyDesk/action-dotnet-publish@v1
+        with:
+          path: './API-CSharp/InversionesLtda.API/'
+          output-dir: './API-CSharp/Target/'
+          build-configuration: Release
+
+      # ZIP
+      - name: Generar Zip
+        run: |
+          zip -r MiApp.zip ./API-CSharp/Target/
+           
+      - uses: azure/webapps-deploy@v2
+        with:
+          app-name: apptest
+          resource-name: rg_misrecursos
